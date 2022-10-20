@@ -4,27 +4,34 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import Grid from '@mui/material/Grid'; 
+
+import data from "./portfolioData.js"
+
 
 export default function ActionAreaCard() {
   return (
+  <Grid container spacing={2}>
+    {data.map(({id, title, description, image}) => (
     <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+      <CardActionArea key={id}>
         <CardMedia
           component="img"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          image={image}
+          alt="bloggingtech"
         />
-        <CardContent>
+        <CardContent key={id}>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
-  );
+    ))}
+  </Grid>
+  )
 }

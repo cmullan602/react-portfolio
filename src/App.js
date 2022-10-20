@@ -1,7 +1,7 @@
 import FixedBottomNavigation from './components/botomNav';
 import './App.css';
 import ResponsiveAppBar from './components/navbar';
-import ActionAreaCard from './components/projectCards';
+import ActionAreaCard from './components/portfolio';
 
 function App() {
   return (
