@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import wow from "../images/wow.JPG"
-import navbarData from "./navbarData.js"
 import Link from '@mui/material/Link';
 
 
@@ -53,7 +52,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Connor Mullan
+          Connor Mullan
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -85,17 +84,35 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              
-                <MenuItem href="#aboutme" onClick={handleCloseNavMenu} >
-                  <Typography href="#aboutme" textAlign="center" >About Me</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}  >
-                  <Typography textAlign="center" href="#portfolio">Portfolio</Typography>
-                </MenuItem>
-                <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Contact</Typography>
-                </MenuItem>
-              
+
+              <MenuItem href="#aboutme" onClick={handleCloseNavMenu} >
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ color: 'black', display: 'block' }}
+                  href="#aboutme"
+                >
+                  About me
+                </Button>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}  >
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ color: 'black', display: 'block' }}
+                  href="#portfolio"
+                >
+                  Portfolio
+                </Button>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}  >
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ color: 'black', display: 'block' }}
+                  href="#portfolio"
+                >
+                  Resume
+                </Button>
+              </MenuItem>
+
             </Menu>
           </Box>
           <Typography
@@ -114,25 +131,32 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            Connor Mullan
+            ConnorMullan
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-       
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                href="#aboutme"
-              >
-                About me
-              </Button>
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-                href="#portfolio"
-              >
-                Portfolio
-              </Button>
-           
+
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+              href="#aboutme"
+            >
+              About me
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+              href="#portfolio"
+            >
+              Portfolio
+            </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: 'white', display: 'block' }}
+              href="#portfolio"
+            >
+              Resume
+            </Button>
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -141,9 +165,9 @@ function ResponsiveAppBar() {
                 <Avatar alt="" src={wow} />
               </IconButton>
             </Tooltip>
-          
-              
-        
+
+
+
           </Box>
         </Toolbar>
       </Container>

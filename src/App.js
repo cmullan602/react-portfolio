@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <ResponsiveAppBar />
       <Bio/>
-     <p>Portfolio </p>
      <ActionAreaCard />
      <FixedBottomNavigation />
     </div>

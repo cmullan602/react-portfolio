@@ -25,9 +25,9 @@ export default function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction  icon={<LinkedInIcon  fontSize="large"/>} />
-          <BottomNavigationAction  icon={<GitHubIcon fontSize="large"/>} />
-          <BottomNavigationAction icon={<MailOutlineIcon fontSize="large"/>} />
+          <BottomNavigationAction  icon={<LinkedInIcon  fontSize="large"/>} href="https://www.linkedin.com/in/connor-mullan-a4068a17a"/>
+          <BottomNavigationAction  icon={<GitHubIcon fontSize="large"/>} href="https://github.com/cmullan602"/>
+          <BottomNavigationAction icon={<MailOutlineIcon fontSize="large"/>} href="mailto:cmullan602@gmail.com"/>
         </BottomNavigation>
       </Paper>
     </Box>
