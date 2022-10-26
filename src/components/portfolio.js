@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Link } from '@mui/material';
 import Grid2 from '@mui/material/Unstable_Grid2';
 import { Container } from '@mui/material';
 
@@ -13,14 +13,14 @@ import data from "./portfolioData.js"
 
 export default function ActionAreaCard() {
   return (
-    <Container maxWidth='xl'>
+   
 
-      <Grid2 container spacing={2}>
+      <Grid2 container spacing={2} id="portfolio">
 
-        {data.map(({ id, title, description, image }) => (
+        {data.map(({ id, title, description, image, link }) => (
           <Grid2 key={id} xs="auto">
             <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea >
+              <CardActionArea href={link}>
                 <CardMedia
                   component="img"
                   height="140"
@@ -41,7 +41,7 @@ export default function ActionAreaCard() {
         ))}
 
       </Grid2>
-    </Container>
+   
 
   )
 }
