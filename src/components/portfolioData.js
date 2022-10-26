@@ -9,7 +9,7 @@ const data = [
     {
         "id": 1,
         "title": "Blogging Tech",
-        "description": "I created this app using SQL, node, ",
+        "description": "I created this app using SQL, node, express and deployed it on heroku. It's a website through which users can create an account and blog about tech.",
         "image": bloggingTech
     },
     {

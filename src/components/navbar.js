@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import wow from "../images/wow.JPG"
 
 
 const pages = ['About Me', 'Portfolio', 'Contact', 'Resume'];
@@ -32,8 +33,8 @@ function ResponsiveAppBar() {
 
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="sticky">
+      <Container maxWidth="l">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
@@ -122,7 +123,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip href=''>
               <IconButton sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="" src={wow} />
               </IconButton>
             </Tooltip>
           
