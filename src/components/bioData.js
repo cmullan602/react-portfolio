@@ -16,7 +16,7 @@ const data = [
      },
      { 
         "id": 1,
-        "title": "Node",
+        "title": "NodeJs",
         "icon": node
      },
      { 
