@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import Paper from '@mui/material/Paper';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 
 export default function FixedBottomNavigation() {
@@ -26,6 +27,7 @@ export default function FixedBottomNavigation() {
           }}
         >
           <BottomNavigationAction  icon={<LinkedInIcon  fontSize="large"/>} href="https://www.linkedin.com/in/connor-mullan-a4068a17a"/>
+          <BottomNavigationAction  icon={<PhoneIcon  fontSize="large"/>} href="tel:6025714543"/>
           <BottomNavigationAction  icon={<GitHubIcon fontSize="large"/>} href="https://github.com/cmullan602"/>
           <BottomNavigationAction icon={<MailOutlineIcon fontSize="large"/>} href="mailto:cmullan602@gmail.com"/>
         </BottomNavigation>

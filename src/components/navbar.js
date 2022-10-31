@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import wow from "../images/wow.JPG"
 import Link from '@mui/material/Link';
+import resume from "../static/resume2022.pdf"
 
 
 const pages = ['About Me', 'Portfolio', 'Contact', 'Resume'];
@@ -107,7 +108,7 @@ function ResponsiveAppBar() {
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{ color: 'black', display: 'block' }}
-                  href="#portfolio"
+                  href={resume}
                 >
                   Resume
                 </Button>
@@ -152,7 +153,7 @@ function ResponsiveAppBar() {
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: 'white', display: 'block' }}
-              href="#portfolio"
+              href={resume}
             >
               Resume
             </Button>
