@@ -1,6 +1,6 @@
 import bloggingTech from "../images/bloggingTech.png";
 import codeCampQuiz from "../images/codeCampQuiz.png";
-import dogFactFinder from "../images/dogFactFinder.png";
+import leashed from "../images/leashed.png";
 import jate from "../images/jate.png";
 import weatherPro from "../images/weatherPro.png";
 import PicShare from "../images/PicShare.png";
@@ -23,10 +23,10 @@ const data = [
     },
     {
         "id": 3,
-        "title": "All Things Dog",
-        "description": "I worked with a group to create this app through which you can search for facts on your favorite breed of dog!",
-        "image": dogFactFinder,
-        "link": "https://cmullan602.github.io/dog-fact-finder/"
+        "title": "Leashed",
+        "description": "I worked with a group to create this app through which you can scroll through pets in your area and chat with dog friends!",
+        "image": leashed,
+        "link": "https://leashed-local.herokuapp.com/"
     },
     {
         "id": 4,
